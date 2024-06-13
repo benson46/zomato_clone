@@ -1,0 +1,756 @@
+/* ------------------COMMAN------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* ------------------------------------HEADER------------------------------------ */
+
+#image-container {
+  width: 100%;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+}
+
+#image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  transform: scale(1.1);
+  filter: blur(1px);
+}
+/* NAV */
+#nav {
+  position: absolute;
+  top: 8px;
+  width: 100%;
+}
+
+#header-nav-container {
+  width: 58%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-container a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration-line: none;
+}
+
+#logo-container p {
+  padding-left: 4px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#nav-header {
+  display: flex;
+}
+
+#nav-header li {
+  list-style-type: none;
+}
+
+#nav-header a {
+  color: white ;
+  text-decoration-line: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 19px;
+  padding-right: 19px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#logo-full {
+  position: absolute;
+  top: 174px;
+  left: 624px;
+  height: 150px;
+  width: 620px;
+}
+
+#logo-img-container {
+  height: 55px;
+  width: 260px;
+  /* background-color: red; */
+  position: absolute;
+  left: 185px;
+}
+
+#logo-img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+#logo-text {
+  position: absolute;
+  top: 60px;
+  left: 2px;
+  width:  688.641px;
+}
+
+#logo-text h1 {
+  color: white;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* ------------------LOCATION AND SEARCH FOOD,RESTAURANT------------------ */
+
+#full-search-container {
+  position: absolute;
+  top: 310px;
+  left: 510px;
+}
+
+#back-text {
+  width: 773px;
+  height: 50px;
+  cursor: default;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: white;
+}
+
+#loc {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#loc input{
+  margin-left: 7px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  border: none;
+  outline: none;
+}
+
+#search {
+  position: absolute;
+  top: 18px;
+  left: 240px;
+}
+
+#input-text {
+  position: absolute;
+  top: -3px;
+  left: 30px;
+}
+
+#input-text input {
+  padding-right: 5px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+/* ------------------------------------BODY------------------------------------ */
+
+/* ORDER OPTIONS */
+#order-option-continer {
+  width: 100%;
+  margin-top: 40px;
+}
+#order-option {
+  width: 58%;
+  margin: auto;
+  display: flex;
+}
+
+.method {
+  width: 49%;
+  border: 1px ridge rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  transition: transform 0.2s;
+}
+
+.method:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.method-img img {
+  width: 490px;
+  height: 140px;
+  object-fit: cover;
+  object-position: 0 -132px;
+  border-radius: 13px 13px 0 0;
+  filter: blur(0.5px);
+}
+
+
+.method-text {
+  width: 93%;
+  margin: auto;
+}
+
+.method-order {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+
+.method-order-feature {
+  margin-top: 4px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(79, 79, 79);
+}
+
+/* TOP COLLECTIONS */
+
+
+#collections-container {
+  width: 100%;
+  height: 420px;
+}
+
+#collections-detials {
+  width: 56%;
+  margin: auto;
+}
+
+#collections-detials h4 {
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#collections-info {
+  margin-top: 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#collections-info p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(54, 54, 54);
+  vertical-align: middle;
+}
+
+#collections-info a {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration-line: none;
+  color: rgb(255, 126, 139);
+  vertical-align: middle;
+}
+
+#collections-info svg {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+#top-cards {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+}
+
+.top-card {
+  margin-right: 13px;
+  position: relative;
+}
+
+.card-container img {
+  min-height: 320px;
+  max-width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.text-above-card {
+  position: absolute;
+  top: 230px;
+  left: 15px;
+}
+
+.text-above-card h6{
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: white;
+}
+
+.text-above-card p{
+  margin-top: 0;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+/* POPULAR LOCALITIES */
+
+#popular-loc {
+  width: 100%;
+  height: 370px;
+  margin-top: 120px;
+}
+
+#container-pop {
+  width: 58%;
+  margin: auto;
+  height: 100%;
+}
+
+#heading-popular h3 {
+  margin-top: 0;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#heading-popular span {
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#places-container {
+  margin-top: 40px;
+}
+
+#locations-row1 {
+  width: 100%;
+  display: flex;
+}
+
+.loc-name {
+  width: 357.922px;
+  height: 80px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+  border: 1px ridge rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.city-places{
+  width: 180px;
+}
+
+.city-places h6{
+  text-align: left;
+  width: 190px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.loc-name p {
+  margin-top: 3px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.place-options {
+  margin-left: 130px;
+}
+
+#locations-row2,
+#locations-row3 {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+
+#see-more {
+  margin-left: 115px;
+  display: flex;
+  align-items: center;
+}
+
+#see-more h6 {
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#see-more svg {
+  margin-left: 15px;
+}
+
+/* GET APP */
+
+#get-app {
+  width: 100%;
+  height: 500px;
+  margin-top: 115px;
+}
+
+#get-app-container {
+  width: 40%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#div-img-app-homepage {
+  width: 280px;
+  height: 500px;
+  margin-right: 20px;
+}
+
+#img-app-homepage  {
+  width: 100%;
+  margin: auto;
+  margin-top: 41.9%;
+  height: 268px;
+}
+
+#img-app-homepage img {
+  width: 90%;
+  height: 100%;
+  margin-left: 11px;
+}
+ 
+#get-detials {
+  width: 550px;
+  height: 500px;
+}
+
+
+#get-text h3{
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 48px;
+  margin-bottom: 15px;
+}
+
+#get-text p {
+font-family: Okra, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: 300;
+line-height: 34px;
+}
+
+#user-information {
+  margin-top: 35px;
+}
+
+#user-information input[type=radio] {
+  cursor: pointer;
+  accent-color: red;
+  width: 4%;
+  height: 16px;
+}
+
+
+#user-information label {
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 19px;
+  cursor: pointer;
+}
+
+#user-email {
+  margin-top: 45px;
+}
+
+#user-email input[type=email] {
+  padding-left: 11.5px;
+  padding-right: 62.5px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  font-family: Okra, Helvetica, sans-seri;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid ;
+  border-color: rgb(224, 53, 70);
+  vertical-align: middle;
+  border-radius: 8px;
+}
+
+#user-email input[type=button] {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: middle;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(16, 16, 16, 0.3);
+  background-color: rgb(156, 156, 156);
+  border: none;
+  border-radius: 8px;
+}
+
+#download-app p {
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(156, 156, 156);
+  margin-top: 12px;
+}
+
+#download-options {
+  margin-top: 15px;
+  display: flex;
+}
+
+.img-download {
+  width: 137px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+/* EXPLORE OPTIONS NEAR USER */
+
+#explore-option {
+  width: 100%;
+  height: 430px;
+  margin-bottom: 0;
+}
+
+#explore-options-container {
+  margin: auto;
+  width: 58%;
+  height: 100%;
+}
+
+#explore-options-container p {
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.explore-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 7px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.explore-options h5{
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.explore-options svg {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* ZOMATO FOOTER LOGO SIDE  */
+
+#zomato-footer {
+  width: 100%;
+  height: 56px;
+  margin-top: 65px;
+}
+
+#zomato-footer-container {
+  width: 59%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+}
+
+#zomato-footer-logo {
+  width: 50%;
+  height: 100%;
+ display: flex;
+  align-items: center;
+}
+
+#zomato-footer-logo img{
+  width: 132px;
+  height: 28px;
+}
+
+#country-language {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#country-lang-buttons {
+  display: flex;
+  width: 35.8%;
+  height: 60%;
+  justify-content: end;
+}
+#country {
+  margin-right: 18px;
+  padding-right: 7px;
+}
+
+#country img {
+  width: 16px;
+  height: 16px;
+}
+
+
+#country ,
+#language {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 6px;
+}
+
+#language {
+  margin-right: 8px;
+  padding-right: 0px;
+}
+
+#country p,
+#language p{  
+  margin-left: 8px;
+  margin-right: 5px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* FOOTER */
+
+#footer {
+  width: 100%;
+  height: 280px;
+}
+
+#footer-container {
+  width: 59%;
+  margin: auto;
+  height: 210px;
+  display: flex;
+}
+
+
+
+#footer-about h5 ,
+#footer-zomaverse h5 ,
+#footer-restaurants h5 ,
+#footer-learn-more h5 ,
+#social-media h5 {
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1.8px;
+}
+
+#footer-about {
+  width: 21.2%;
+  height: 100%;
+}
+#footer-zomaverse {
+  width: 20.5%;
+  height: 100%;
+}
+
+#footer-restaurants {
+  width: 26.5%;
+  height: 100%;
+}
+
+#footer-learn-more {
+  width: 20%;
+  height: 100%;
+}
+
+#social-media{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-about a ,
+#footer-zomaverse a ,
+#footer-restaurants a ,
+#footer-learn-more a {
+  display: block;
+  text-decoration-line: none;
+  margin-bottom: 5px;
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(105, 105, 105);
+}
+
+#link-social a {
+  margin-top: 5px;
+  text-decoration-line: none;
+}
+
+#playstore-footer img{
+  margin-top: 65px;
+  width: 137px;
+  height: 40px;
+}
+
+#footer-container2 {
+  margin: auto;
+  width: 59%;
+  height: 60px;
+}
+
+
+
+#footer-container2 p {
+  font-family: Okra, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(79, 79, 79);
+}
