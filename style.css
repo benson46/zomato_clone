@@ -133,6 +133,10 @@ body {
   align-items: center;
 }
 
+#loc svg {
+  cursor: pointer;
+}
+
 #loc input{
   margin-left: 7px;
   padding-top: 2px;
@@ -308,6 +312,7 @@ body {
   max-width: 250px;
   border-radius: 8px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .text-above-card {
@@ -512,7 +517,7 @@ line-height: 34px;
 }
 
 #user-email {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 #user-email input[type=email] {
